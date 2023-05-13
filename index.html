@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"> <!-- specify the character encoding for the document -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- set the compatibility mode for Internet Explorer -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- set the viewport size and scale for responsive design -->
+ <link rel="stylesheet" href="stopwatch.css"> <!-- link to the external stylesheet -->
+ <title>Document</title> <!-- set the title of the document -->
+</head>
+<body>
+ <div class="wrapper"> <!-- create a wrapper div to contain the stopwatch elements -->
+ 
+ <div class="time"> <!-- create a div to display the time -->
+ <span class="hour">00</span> <!-- create a span to display the hour -->
+ <span class="colon">:</span> <!-- create a span to display the colon separator -->
+ <span class="minute">00</span> <!-- create a span to display the minute -->
+ <span class="colon">:</span> <!-- create a span to display the colon separator -->
+ <span class="second">00</span> <!-- create a span to display the second -->
+ <span class="colon ms-colon">:</span> <!-- create a span to display the colon separator for milliseconds -->
+ <span class="millisecond">00</span> <!-- create a span to display the millisecond -->
+ </div>
+ 
+ <div class="buttons"> <!-- create a div to display the buttons -->
+ <button class="start">Start</button> <!-- create a button to start the stopwatch -->
+ <button class="stop">Stop</button> <!-- create a button to stop the stopwatch -->
+ <button class="reset">Reset</button> <!-- create a button to reset the stopwatch -->
+ </div>
+ 
+ </div>
+ 
+ <script src="stopwatch.js"></script> <!-- link to the external script file -->
+</body>
+</html>

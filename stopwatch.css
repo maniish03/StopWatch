@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); /* import the Poppins font from Google Fonts */
+
+* { /* select all elements */
+ margin: 0; /* set the margin to 0 */
+ padding: 0; /* set the padding to 0 */
+ box-sizing: border-box; /* set the box-sizing to border-box */
+ font-family: "Poppins", sans-serif; /* set the font-family to Poppins */
+}
+body { /* select the body element */
+ height: 100vh; /* set the height to 100% of the viewport height */
+ display: flex; /* set the display to flex */
+ align-items: center; /* align the items vertically */
+ justify-content: center; /* align the items horizontally */
+ background: #5383ff; /* set the background color to #5383ff */
+}
+
+.wrapper .time { /* select the time div inside the wrapper div */
+ height: 100px; /* set the height to 100px */
+ background: #fff; /* set the background color to white */
+ display: flex; /* set the display to flex */
+ align-items: center; /* align the items vertically */
+ justify-content: center; /* align the items horizontally */
+ border-radius: 6px; /* set the border radius to 6px */
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09); /* set a box shadow effect */
+ padding: 0 10px; /* set the padding to 0 top and bottom and 10px left and right */
+}
+.wrapper .time span { /* select the span elements inside the time div */
+ width: 100px; /* set the width to 100px */
+ text-align: center; /* set the text alignment to center */
+ font-size: 50px; /* set the font size to 50px */
+ font-weight: 500; /* set the font weight to 500 */
+ color: #333; /* set the color to #333 */
+}
+.time span.colon { /* select the span elements with class colon inside the time div */
+ width: 10px; /* set the width to 10px */
+}
+.time span.ms-colon,
+.time span.millisecond { /* select the span elements with class ms-colon or millisecond inside the time div */
+ color: #7d2ae8; /* set the color to #7d2ae8 */
+}
+.wrapper .buttons { /* select the buttons div inside the wrapper div */
+ text-align: center; /* set the text alignment to center */
+ margin-top: 20px; /* set the margin top to 20px */
+}
+.buttons button { /* select the button elements inside the buttons div */
+ padding: 6px 16px; /* set the padding to 6px top and bottom and 16px left and right */
+ outline: none; /* remove the outline effect on focus */
+ border: none; /* remove the border effect on focus */
+ margin: 0 5px; /* set the margin to 0 top and bottom and 5px left and right */
+ color: #7d2ae8; /* set the color to #7d2ae8 */
+ background: #fff; /* set the background color to white */
+ font-size: 19px; /* set the font size to 19px */
+ font-weight: 500; /* set the font weight to 500 */
+ border-radius: 4px; /* set the border radius to 4px */
+ cursor: pointer; /* change the cursor to pointer on hover */
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09); /* set a box shadow effect on hover*/
+}
+.buttons button.active,
+.buttons button.stopActive { /* select the button elements with class active or stopActive inside the buttons div*/
+ pointer-events: none; /* disable pointer events on click*/
+ opacity: 0.7; /* reduce opacity on click*/
+}
